@@ -4,6 +4,7 @@ echo -e " Input User Client Name"
 read -rp "User: " -e user
 read -rp "Limit Install: " -e limit
 read -rp "Expired (days): " -e exp
+read -rp "Toket :" -e Toket
 Input_License_Key=$(openssl rand -base64 32)
 Key="$Input_License_Key"
 
@@ -25,7 +26,7 @@ echo -e "$License_Key $limit $exp 1 1 Pro $user" >> /root/akses/validated-regist
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/bokir-tampan/test
-    git push -f https://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@github.com/bokir-tampan/test.git &> /dev/null
+    git push -f https://$toket@github.com/bokir-tampan/test.git &> /dev/null
 
 cd
 clear
