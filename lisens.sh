@@ -25,7 +25,7 @@ echo -e "$License_Key $limit $exp 1 1 Pro $user" >> /root/akses/validated-regist
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/bokir-tampan/test
-    git push -f https://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@github.com/bokir-tampan/test.git &> /dev/null
+    git push -f https://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@github.com/bokir-tampan/test.git &> /dev/null
 
 cd
 clear
