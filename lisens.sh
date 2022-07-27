@@ -13,7 +13,7 @@ hashsuccess="$(echo -n "$Key" | sha256sum | cut -d ' ' -f 1)"
 Sha256Successs="$(echo -n "$hashsuccess$algoritmakeys" | sha256sum | cut -d ' ' -f 1)"
 License_Key=$Sha256Successs
 
-
+mkdir /root/akses
 git clone https://github.com/bokir-tampan/test.git /root/akses/ &> /dev/null
 echo -e "$License_Key $limit $exp 1 1 Pro $user" >> /root/akses/validated-registered-license-key.txt
     cd /root/akses
