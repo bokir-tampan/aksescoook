@@ -13,7 +13,7 @@ hashsuccess="$(echo -n "$Key" | sha256sum | cut -d ' ' -f 1)"
 Sha256Successs="$(echo -n "$hashsuccess$algoritmakeys" | sha256sum | cut -d ' ' -f 1)"
 License_Key=$Sha256Successs
 
-
+mkdir -p /root/akses
 git clone https://github.com/bokir-tampan/test.git /root/akses/ &> /dev/null
 echo -e "$License_Key $limit $exp 1 1 Pro $user" >> /root/akses/validated-registered-license-key.txt
     cd /root/akses
@@ -25,7 +25,7 @@ echo -e "$License_Key $limit $exp 1 1 Pro $user" >> /root/akses/validated-regist
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/bokir-tampan/test
-    git push -f https://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@github.com/bokir-tampan/test.git &> /dev/null
+    git push -f https://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@github.com/bokir-tampan/test.git &> /dev/null
 
 cd
 clear
