@@ -14,18 +14,18 @@ Sha256Successs="$(echo -n "$hashsuccess$algoritmakeys" | sha256sum | cut -d ' ' 
 License_Key=$Sha256Successs
 
 
-git clone https://github.com/bokir-tampan/test.git /root/akses/ 
+git clone https://github.com/bokir-tampan/test.git /root/akses/ &> /dev/null
 echo -e "$License_Key $limit $exp 1 1 Pro $user" >> /root/akses/validated-registered-license-key.txt
     cd /root/akses
-    git config --global user.email "moving.headers@gmail.com" 
-    git config --global user.name "bokir-tampan" 
-    rm -rf .git 
-    git init 
-    git add . 
-    git commit -m m 
-    git branch -M main 
+    git config --global user.email "moving.headers@gmail.com" &> /dev/null
+    git config --global user.name "bokir-tampan" &> /dev/null
+    rm -rf .git &> /dev/null
+    git init &> /dev/null
+    git add . &> /dev/null
+    git commit -m m &> /dev/null
+    git branch -M main &> /dev/null
     git remote add origin https://github.com/bokir-tampan/test
-    git push -f https://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@github.com/bokir-tampan/test.git 
+    git push -f https://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@github.com/bokir-tampan/test.git &> /dev/null
 
 cd
 clear
@@ -35,4 +35,4 @@ echo -e "Expired         = $exp"
 echo -e "Limit Install   = $limit"
 echo -e "User Client     = $user"
 echo -e "==============================="
-rm -rf  /root/akses 
+rm -rf  /root/akses &> /dev/null
